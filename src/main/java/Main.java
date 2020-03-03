@@ -3,10 +3,14 @@ import org.slf4j.LoggerFactory;
 
 
 public class Main {
-    private static final Logger LOG = LoggerFactory.getLogger(Main.class);
+    public static final Logger LOGGER = LoggerFactory.getLogger(Main.class);
 
     public static void main(String[] args) {
-       // System.out.println(" 123");
-        LOG.info("Привет !");
+
+        LOGGER.info("Test log record!!!");
+        LOGGER.error("В программе возникла ошибка!");
+        LOGGER.warn("Предупреждение");
+        LOGGER.trace("Путь");
+
     }
 }
